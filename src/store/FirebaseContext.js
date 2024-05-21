@@ -7,7 +7,7 @@ export default function Context({children}){
     const [user,setUser]=useState('Hello');
 
     return(
-        <AuthContext.Provider value={user}>
+        <AuthContext.Provider value={{user,setUser}}>
             {children}
         </AuthContext.Provider>
     )
